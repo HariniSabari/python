@@ -1,0 +1,271 @@
+#Task 1
+#Pass or Fail
+marks = int(input("Enter marks: "))
+
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+#Task 2
+#Voting Eligibility 
+age = int(input("Enter age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+#Task 3 
+#Shopping Discount
+bill = float(input("Enter shopping bill: "))
+
+if bill > 5000:
+    discount = bill * 0.10
+else:
+    discount = 0
+
+final = bill - discount
+
+print("Discount:", discount)
+print("Final Amount:", final)
+
+#Task 4
+#Password Verification 
+stored_password = "admin123"
+password = input("Enter password: ")
+
+if password == stored_password:
+    print("Access Granted")
+else:
+    print("Wrong Password")
+
+#Task 5
+#Grade Calculator 
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+else:
+    print("Fail")
+
+#Task 6
+#Simple Calculator 
+a = float(input("Enter a number: "))
+b = float(input("Enter b number: "))
+
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+choice = int(input("Enter choice: "))
+
+if choice == 1:
+    print("Answer =", a + b)
+elif choice == 2:
+    print("Answer =", a - b)
+elif choice == 3:
+    print("Answer =", a * b)
+elif choice == 4:
+    print("Answer =", a / b)
+else:
+    print("Invalid Choice")
+
+#Task 7
+#Electricity Bill
+units = int(input("Enter units: "))
+
+if units <= 100:
+    bill = units * 2
+elif units <= 200:
+    bill = units * 3
+else:
+    bill = units * 5
+
+print("Electricity Bill =", bill)
+
+#Task 8
+#Ticket Fare
+age = int(input("Enter age: "))
+
+if age < 5:
+    fare = 0
+elif age <= 12:
+    fare = 50
+else:
+    fare = 100
+
+print("Ticket Fare =", fare)
+
+#Task 9
+#Loan Approval
+salary = int(input("Enter salary: "))
+
+if salary > 30000:
+    credit = int(input("Enter credit score: "))
+    if credit > 700:
+        print("Loan Approved")
+    else:
+        print("Loan Rejected")
+else:
+    print("Not Eligible")
+
+#Task 10
+#College Admission 
+academic = float(input("Enter academic percentage: "))
+
+if academic > 60:
+    entrance = int(input("Enter entrance exam score: "))
+    if entrance > 70:
+        print("Admission Granted")
+    else:
+        print("Admission Denied")
+else:
+    print("Not Eligible")
+
+#Task 11
+#Company Recruitment 
+degree = float(input("Enter degree percentage: "))
+
+if degree > 65:
+    aptitude = int(input("Enter aptitude score: "))
+    if aptitude > 75:
+        print("Selected")
+    else:
+        print("Not Selected")
+else:
+    print("Not Eligible")
+
+#Task 12
+#Scholarship Eligibility 
+marks = float(input("Enter percentage: "))
+
+if marks > 80:
+    attendance = float(input("Enter attendance percentage: "))
+    if attendance > 75:
+        print("Scholarship Awarded")
+    else:
+        print("Scholarship Not Awarded")
+else:
+    print("Not Eligible")
+
+#Task 13
+#ATM Withdrawal 
+balance = float(input("Enter account balance: "))
+amount = float(input("Enter withdrawal amount: "))
+
+if balance >= amount:
+    pin = input("Enter PIN: ")
+    if pin == "1234":
+        print("Transaction Successful")
+    else:
+        print("Wrong PIN")
+else:
+    print("Insufficient Balance")
+
+#Task 14
+#Secure Login
+username = input("Enter username: ")
+
+if username == "admin":
+    password = input("Enter password: ")
+    if password == "admin123":
+        otp = input("Enter OTP: ")
+        if otp == "1111":
+            print("Login Successful")
+        else:
+            print("Wrong OTP")
+    else:
+        print("Wrong Password")
+else:
+    print("Wrong Username")
+
+#Task 15
+#Hospital Appointment 
+doctor = input("Is doctor available? (yes/no): ")
+
+if doctor == "yes":
+    slots = input("Are slots available? (yes/no): ")
+    if slots == "yes":
+        print("Appointment Confirmed")
+    else:
+        print("No Slots Available")
+else:
+    print("Doctor Not Available")
+
+#Task 16
+#Cyber Lab Access 
+registered = input("Registered? (yes/no): ")
+
+if registered == "yes":
+    fees = input("Fees Paid? (yes/no): ")
+    if fees == "yes":
+        print("Lab Access Granted")
+    else:
+        print("Pay Fees First")
+else:
+    print("Not Registered")
+
+#Task 17
+#Employee Experience 
+experience = int(input("Enter years of experience: "))
+
+if experience > 3:
+    rating = int(input("Enter performance rating: "))
+    if rating >= 8:
+        print("Bonus Eligible")
+    else:
+        print("Bonus Not Eligible")
+else:
+    print("Not Eligible")
+
+#Task 18
+#Online Examination Portal 
+hall_ticket = input("Hall ticket available? (yes/no): ")
+
+if hall_ticket == "yes":
+    fees = input("Fees cleared? (yes/no): ")
+    if fees == "yes":
+        print("Access Granted")
+    else:
+        print("Clear Fees First")
+else:
+    print("Hall Ticket Not Available")
+
+#Task 19
+#Hostel Room Allotment 
+selected = input("Selected for admission? (yes/no): ")
+
+if selected == "yes":
+    rooms = input("Rooms available? (yes/no): ")
+    if rooms == "yes":
+        print("Room Allotted")
+    else:
+        print("No Rooms Available")
+else:
+    print("Admission Not Confirmed")
+
+#Task 20
+#Online Shopping Discount
+amount = float(input("Enter purchase amount: "))
+member = input("Premium member? (yes/no): ")
+
+if amount > 5000:
+    if member == "yes":
+        discount = amount * 0.20
+    else:
+        discount = amount * 0.10
+else:
+    discount = 0
+
+final = amount - discount
+
+print("Discount =", discount)
+print("Final Amount =", final)
+
+
